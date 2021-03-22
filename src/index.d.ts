@@ -1,0 +1,1 @@
+declare module 'date-and-time/plugin/two-digit-year';
