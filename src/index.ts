@@ -18,6 +18,7 @@ interface Message {
     type: MessageType;
     line_without_emoji: string;
     url: string;
+    chat_message: string;
     author: string;
     timedate: Date;
     contains_emoji: boolean;
@@ -93,9 +94,10 @@ export class ChatStats {
     }
 
     parse_line(line: string): Message {
-        let type = "chat";
+        let type = undefined;
         let line_without_emoji = line;
         let url = undefined;
+        let chat_message = undefined;
         let author = "system";
         let timedate: Date = new Date();
         let contains_emoji = false;
@@ -138,6 +140,7 @@ export class ChatStats {
                 type = "attachment";
             } else if(line.match(this.patterns.IS_CHAT)) {
                 type = "chat";
+                chat_message = line.split(author+": ")[1];
             }
 
             if(type !== undefined && typeof(author) == "string"){
@@ -170,6 +173,7 @@ export class ChatStats {
             type: type as unknown as MessageType,
             line_without_emoji: line_without_emoji,
             url: url,
+            chat_message: chat_message,
             author: author,
             timedate: timedate,
             contains_emoji: contains_emoji,

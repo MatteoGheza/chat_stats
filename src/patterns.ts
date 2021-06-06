@@ -46,11 +46,33 @@ export const Patterns = {
         member_added: [
             " added ", //EN
             " ha aggiunto ", //IT
+            " hai aggiunto ", //IT
+            "Ha aggiunto ", //IT
+            "Hai aggiunto ", //IT
+            " ti ha aggiunto", //IT
+            " è stato aggiunto", //IT
             " menambahkan ", //ID
         ],
         member_removed: [
             " removed ", //EN
             " ha rimosso ", //IT
+            " hai rimosso ", //IT
+        ],
+        group_settings_changed: [
+            " cambiato le impostazioni del gruppo " //IT
+        ],
+        group_image_changed: [
+            " ha cambiato l'immagine " //IT
+        ],
+        group_description_changed: [
+            " ha cambiato l'oggetto da ", //IT
+            " ha cambiato la descrizione del gruppo" //IT
+        ],
+        someone_become_admin: [
+            "Ora sei un amministratore" //IT
+        ],
+        someone_become_not_admin: [
+            "Non sei più un amministratore." //IT
         ]
     },
     ATTACHMENTS: {
