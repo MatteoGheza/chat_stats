@@ -57,6 +57,7 @@ export const Patterns = {
             " removed ", //EN
             " ha rimosso ", //IT
             " hai rimosso ", //IT
+            "Hai rimosso " //IT
         ],
         group_settings_changed: [
             " cambiato le impostazioni del gruppo " //IT
@@ -73,6 +74,12 @@ export const Patterns = {
         ],
         someone_become_not_admin: [
             "Non sei più un amministratore." //IT
+        ],
+        someone_blocked: [
+            "Hai bloccato questo contatto. Tocca per sbloccare." //IT
+        ],
+        someone_unblocked: [
+            "Hai sbloccato questo contatto." //IT
         ]
     },
     ATTACHMENTS: {
