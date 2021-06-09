@@ -38,6 +38,9 @@ export const Patterns = {
             " ha cambiato numero in.*", //IT
             " è stato cambiato con.*", //IT
         ],
+        member_phone_number_replaced: [
+            " è stato cambiato con " //IT
+        ],
         join: [
             " joined using this group's invite link.*", //EN
             " è entrato usando il link d'invito al gruppo.*", //IT
@@ -73,13 +76,13 @@ export const Patterns = {
             "Ora sei un amministratore" //IT
         ],
         someone_become_not_admin: [
-            "Non sei più un amministratore." //IT
+            "Non sei più un amministratore" //IT
         ],
         someone_blocked: [
-            "Hai bloccato questo contatto. Tocca per sbloccare." //IT
+            "Hai bloccato questo contatto. Tocca per sbloccare" //IT
         ],
         someone_unblocked: [
-            "Hai sbloccato questo contatto." //IT
+            "Hai sbloccato questo contatto" //IT
         ]
     },
     ATTACHMENTS: {
